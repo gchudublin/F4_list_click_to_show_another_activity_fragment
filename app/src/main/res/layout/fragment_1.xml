@@ -6,10 +6,10 @@
     android:weightSum="1">
 
     <TextView
-        android:layout_width="238dp"
-        android:layout_height="wrap_content"
-        android:text="New Text"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:text="fragment 1"
         android:id="@+id/textView"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="top"
         android:layout_weight="0.54" />
 </LinearLayout>

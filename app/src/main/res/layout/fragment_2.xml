@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="238dp"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:text="fragment 2"
         android:id="@+id/textView"
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.54" />
