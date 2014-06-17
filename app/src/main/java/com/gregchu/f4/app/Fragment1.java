@@ -16,7 +16,7 @@ import android.view.ViewGroup;
 /**
  * Created by Vivz on 10/25/13.
  */
-public class Fragment1 extends Fragment implements View.OnTouchListener {
+public class Fragment1 extends Fragment  {
 
     private static final String Fragment1 = "Fragment1";
     @Override
@@ -130,18 +130,18 @@ public class Fragment1 extends Fragment implements View.OnTouchListener {
 
     }
 
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
-        Log.d(Fragment1,"onTouch");
-        if(event.getAction() == MotionEvent.ACTION_MOVE){
-            Log.d(Fragment1,"onTouch move");
-        }
-        if(event.getAction() == MotionEvent.ACTION_DOWN){
-            Log.d(Fragment1,"onTouch down");
-        }
-        if(event.getAction() == MotionEvent.ACTION_UP){
-            Log.d(Fragment1,"onTouch up");
-        }
-        return true;
-    }
+//    @Override
+//    public boolean onTouch(View v, MotionEvent event) {
+//        Log.d(Fragment1,"onTouch");
+//        if(event.getAction() == MotionEvent.ACTION_MOVE){
+//            Log.d(Fragment1,"onTouch move");
+//        }
+//        if(event.getAction() == MotionEvent.ACTION_DOWN){
+//            Log.d(Fragment1,"onTouch down");
+//        }
+//        if(event.getAction() == MotionEvent.ACTION_UP){
+//            Log.d(Fragment1,"onTouch up");
+//        }
+//        return true;
+//    }
 }
