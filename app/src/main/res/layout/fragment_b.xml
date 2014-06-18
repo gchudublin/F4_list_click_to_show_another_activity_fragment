@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="200dp"
+    android:id="@+id/numberPadLayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is fragment B"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.54" />
+    <!--<android.support.v4.view.ViewPager-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_height="250dp"-->
+    <!--android:layout_width="match_parent">-->
+    <!--android:id="@+id/pager"-->
+    <!--android:background="#FFFF"-->
+    <!--<android.support.v4.view.PagerTitleStrip-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="250dp"-->
+    <!--android:id="@+id/title"-->
+    <!--android:background="#FF0"-->
+    <!--android:paddingTop="4dp"-->
+    <!--android:paddingBottom="4dp">-->
+    <!--</android.support.v4.view.PagerTitleStrip>-->
+    <!--</android.support.v4.view.ViewPager>-->
+
+
+</LinearLayout>
