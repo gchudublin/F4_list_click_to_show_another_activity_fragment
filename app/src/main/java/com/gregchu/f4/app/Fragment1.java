@@ -19,13 +19,19 @@ import android.view.ViewGroup;
 public class Fragment1 extends Fragment  {
 
     private static final String Fragment1 = "Fragment1";
+    FragmentA.Communicator communicator;
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         Log.d(Fragment1,"onAttach");
+        communicator =(FragmentA.Communicator)activity;
 
     }
 
+    public void setCommunicator(FragmentA.Communicator communicator)
+    {
+        this.communicator=communicator;
+    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,11 +43,10 @@ public class Fragment1 extends Fragment  {
         {
             Log.d(Fragment1,"onCreate SUBSEQUENT TIME");
         }
-
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater,container,savedInstanceState);
         Log.d(Fragment1,"onCreateView");
         View view = inflater.inflate(R.layout.fragment_1, container, false);
@@ -57,6 +62,8 @@ public class Fragment1 extends Fragment  {
                 }
                 if(event.getAction() == MotionEvent.ACTION_UP){
                     Log.d(Fragment1,"onTouch up");
+                    Log.d(Fragment1,(communicator==null)+"");
+                    communicator.respond(0);
                 }
                 return true;
             }
@@ -129,19 +136,4 @@ public class Fragment1 extends Fragment  {
         Log.d(Fragment1,"onDetach");
 
     }
-
-//    @Override
-//    public boolean onTouch(View v, MotionEvent event) {
-//        Log.d(Fragment1,"onTouch");
-//        if(event.getAction() == MotionEvent.ACTION_MOVE){
-//            Log.d(Fragment1,"onTouch move");
-//        }
-//        if(event.getAction() == MotionEvent.ACTION_DOWN){
-//            Log.d(Fragment1,"onTouch down");
-//        }
-//        if(event.getAction() == MotionEvent.ACTION_UP){
-//            Log.d(Fragment1,"onTouch up");
-//        }
-//        return true;
-//    }
 }
