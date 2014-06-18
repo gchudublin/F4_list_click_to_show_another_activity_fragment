@@ -25,7 +25,7 @@ public class FragmentB extends android.support.v4.app.Fragment {
     LinearLayout.LayoutParams params;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Log.d("VIVZ","View was created");
+        Log.d("FragmentB","View was created");
         View view=inflater.inflate(R.layout.fragment_b, container, false);
         text= (TextView) view.findViewById(R.id.textView);
         return view;
@@ -33,7 +33,7 @@ public class FragmentB extends android.support.v4.app.Fragment {
     public void changeData(int index)
     {
         String[] descriptions=getResources().getStringArray(R.array.Desc);
-        Log.d("VIVZ","Descriptions retrieved");
+        Log.d("FragmentB","Descriptions retrieved");
         text.setText(descriptions[index]);
     }
 }

@@ -81,13 +81,13 @@ public class MainActivity extends ActionBarActivity implements FragmentA.Communi
         @Override
         public CharSequence getPageTitle(int position) {
             if (position == 0) {
-                return "Tab 1";
+                return "#1";
             }
             if (position == 1) {
-                return "Tab 2";
+                return "#2";
             }
             if (position == 2) {
-                return "Tab 3";
+                return "#3";
             }
             return null;
         }
